@@ -1,2 +1,3 @@
-# Plugin's routes
-# See: http://guides.rubyonrails.org/routing.html
+
+get 'changeauthor', :to => 'change_author#index'
+post 'changeauthor', :to => 'change_author#edit'

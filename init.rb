@@ -1,8 +1,7 @@
+
 Redmine::Plugin.register :changeauthor2 do
-  name 'Changeauthor2 plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  name 'ChangeAuthor2 plugin'
+  author 'Josef Cech'
+  description 'Plugin for changing author of task'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
 end

@@ -1,0 +1,10 @@
+<h2><%= @issue %></h2>
+
+<%= link_to l(:button_back), issue_path(@issue) %>
+
+<%= form_tag(url_for(:controller => 'change_author', :action => 'edit', :id => @issue)) do %>
+  <%= select_tag(:author_id,
+    options_from_collection_for_select(@users, :id, :name, @issue["author_id"])
+   ) %>
+  <%= submit_tag(l(:button_change_author)) %>
+<% end %>
