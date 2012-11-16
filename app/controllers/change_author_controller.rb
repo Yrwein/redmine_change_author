@@ -1,6 +1,8 @@
 class ChangeAuthorController < ApplicationController
   unloadable
 
+  before_filter :require_admin
+
   def index
     @issue = Issue.find_by_id params[:id]
     @users = User.all
