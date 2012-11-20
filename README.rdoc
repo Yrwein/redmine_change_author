@@ -1,3 +1,7 @@
 = changeauthor2
 
 Plugin for changing author of task
+
+== Installation
+
+git clone git://github.com/Yrwein/redmine_change_author.git plugins/changeauthor2
